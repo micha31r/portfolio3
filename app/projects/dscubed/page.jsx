@@ -2,6 +2,7 @@
 import { H1, P } from "@/components/Typography";
 import { DS3, UI, WEB } from "@/lib/tags";
 import ProjectLayout from "@/components/ProjectLayout";
+import Skeleton from "@/components/Skeleton";
 
 const cards = [
   { name: 'Interactive Matrix', image: require('@/public/dscubed/matrix.png'), orientation: 'landscape', tags: [WEB] },
@@ -37,7 +38,7 @@ export default function Page() {
         <P className="text-base" muted>2023 - 2024</P>
       </ProjectInfo>
       <ProjectDescription>
-        <P className="text-md">Designed and built a website for DSCubed (Data Science Student Society) at University of Melbourne. The home page features an interactive matrix which response to mouse and touch events, creating a seamless and playful experience for users.</P>
+        <Skeleton />
       </ProjectDescription>
     </ProjectLayout>
   );
