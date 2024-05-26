@@ -20,8 +20,8 @@ export default function ProjectLayout({ cards, tags, link, children }) {
             ))}
           </div>
           {link && (
-            <button className="flex gap-2 w-max px-6 p-2 text-base font-medium bg-foreground text-background rounded-full">
-              <Link href={link}>Visit</Link>
+            <button className="flex gap-2 w-max px-6 p-2 text-base font-medium bg-foreground text-background rounded-full" onClick={() => window.open(link)}>
+              <span>Visit</span>
               <ArrowUpRightIcon className="w-4 h-4 stroke-current [&_*]:stroke-1 my-auto"/>
             </button>
           )}
