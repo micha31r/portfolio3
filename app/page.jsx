@@ -13,10 +13,10 @@ function SLink ({ href, children }) {
 
 export default function Page() {
   return (
-    <main className="space-y-20">
+    <main className="space-y-10 lg:space-y-20">
       <Navbar/>
 
-      <Section classNameInner="space-y-[1em] text-xl">
+      <Section classNameInner="space-y-[1em] text-lg md:text-xl">
         <P>Hello! I'm Michael.</P>
         <P>I'm currently in my penultimate year at the University of Melbourne, majoring in Computing and Software Systems.</P>
         {/* <P>I'm involved in several tech clubs: IT Director at <SLink href="https://www.dscubed.org.au/">DS Cubed</SLink>, IT Officer at <SLink href="https://cissa.org.au/">CISSA</SLink>, and Events Officer at GDSC</P> */}
