@@ -16,7 +16,7 @@ const cards = [
 
 const tags = [SKYLINE, UI, WEB];
 
-export function ProjectInfo({ children }) {
+function ProjectInfo({ children }) {
   return (
     <div className="space-y-1">
       {children}
@@ -24,7 +24,7 @@ export function ProjectInfo({ children }) {
   )
 }
 
-export function ProjectDescription({ children }) {
+function ProjectDescription({ children }) {
   return (
     <div className="space-y-[1.25em]">
       {children}

@@ -14,7 +14,7 @@ const cards = [
 
 const tags = [EPM, UI, WEB];
 
-export function ProjectInfo({ children }) {
+function ProjectInfo({ children }) {
   return (
     <div className="space-y-1">
       {children}
@@ -22,7 +22,7 @@ export function ProjectInfo({ children }) {
   )
 }
 
-export function ProjectDescription({ children }) {
+function ProjectDescription({ children }) {
   return (
     <div className="space-y-[1.25em]">
       {children}
@@ -34,7 +34,7 @@ export default function Page() {
   return (
     <ProjectLayout cards={cards} tags={tags} link={"https://evanspropertymanagement.co.nz/"}>
       <ProjectInfo>
-        <H1>Evan's Property Management</H1>
+        <H1>Evan&apos;s Property Management</H1>
         <P className="text-base" muted>2021</P>
       </ProjectInfo>
       <ProjectDescription>
