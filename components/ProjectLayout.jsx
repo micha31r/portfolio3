@@ -7,7 +7,7 @@ import { TAGS } from "@/lib/tags";
 
 export default function ProjectLayout({ cards, tags, link, children }) {
   return (
-    <main className="space-y-20">
+    <main className="space-y-10 lg:space-y-20">
       <Navbar/>
 
       <Section classNameInner="space-y-8 text-lg">
