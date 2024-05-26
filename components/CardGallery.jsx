@@ -22,8 +22,8 @@ export default function CardGallery ({ className, data }) {
   const seed = format(new Date(), 'yyyy-MM-dd')
   const rand = create(seed)
 
-  // Sort by date order
-  // data = [...data].sort(() => rand(2) - 0.5)
+  // Data is sorted by date and then shuffled
+  data = [...data].sort(() => rand(2) - 0.5)
   data = [...data].sort(({ date: a }, { date: b }) => new Date(b) - new Date(a));
 
   // Add/remove tag from filters

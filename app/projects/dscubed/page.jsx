@@ -4,27 +4,27 @@ import { DS3, UI, WEB } from "@/lib/tags";
 import ProjectLayout from "@/components/ProjectLayout";
 
 const cards = [
-  {
-    name: 'Matrix',
-    image: require('@/public/ds3.png'),
-    orientation: 'landscape',
-    date: '21',
-    tags: [WEB]
-  },
-  {
-    name: 'Home',
-    image: require('@/public/events.png'),
-    orientation: 'landscape',
-    date: '21',
-    tags: [WEB]
-  },
-  {
-    name: 'Events',
-    image: require('@/public/ds3.png'),
-    orientation: 'landscape',
-    date: '21',
-    tags: [WEB]
-  },
+  // {
+  //   name: 'Matrix',
+  //   image: require('@/public/ds3.png'),
+  //   orientation: 'landscape',
+  //   date: '21',
+  //   tags: [WEB]
+  // },
+  // {
+  //   name: 'Home',
+  //   image: require('@/public/events.png'),
+  //   orientation: 'landscape',
+  //   date: '21',
+  //   tags: [WEB]
+  // },
+  // {
+  //   name: 'Events',
+  //   image: require('@/public/ds3.png'),
+  //   orientation: 'landscape',
+  //   date: '21',
+  //   tags: [WEB]
+  // },
 ]
 
 const tags = [DS3, WEB, UI];

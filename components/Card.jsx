@@ -27,7 +27,7 @@ export default function Card ({ data: { name, image, date, tags, orientation, hr
           {tags && tags.includes(WEB) ? (
             <BrowserFrame className="m-auto" blur={<Image src={image} sizes="50px" alt="" />}>
               <div className="relative max-w-[400px] rounded overflow-hidden">
-                <Image src={image} sizes="400px" className="w-screen dark:brightness-90" alt="" />
+                <Image src={image} sizes="400px" className="w-screen" alt="" />
               </div>
             </BrowserFrame>
           ) : (
@@ -35,7 +35,7 @@ export default function Card ({ data: { name, image, date, tags, orientation, hr
               '!max-w-[400px]': orientation === 'landscape',
             })}>
               <div className="absolute w-full h-full rounded-[6px] shadow-[inset_0_0_0_1px_hsl(var(--border))] z-10 mix-blend-multiply dark:mix-blend-screen pointer-events-none"></div>
-              <Image src={image} sizes="400px" className="w-screen dark:brightness-90" alt="" />
+              <Image src={image} sizes="400px" className="w-screen" alt="" />
             </div>
           )}
         </Suspense>
