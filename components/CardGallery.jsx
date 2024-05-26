@@ -55,7 +55,7 @@ export default function CardGallery ({ className, data }) {
           })} data={item}>
             <div className="links absolute flex gap-2 left-2 bottom-2 opacity-0 transition pointer-events-none z-10">
               {item.tags.filter((symbol) => hasSymbol(CATEGORY_TAGS, symbol)).map((tag, index) => (
-                <button onClick={e => toggleFilter(tag)} key={index} className="bg-background border border-border shadow-sm rounded-full px-2 py-0.5">{CATEGORY_TAGS[tag]}</button>
+                <button onClick={e => toggleFilter(tag)} key={index} className="bg-background shadow-sm rounded-full px-3 py-1">{CATEGORY_TAGS[tag]}</button>
               ))}
             </div>
           </Card>
