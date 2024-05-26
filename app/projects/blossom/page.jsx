@@ -1,6 +1,6 @@
 "use client"
 import { H1, P } from "@/components/Typography";
-import { BLOSSOM, DESIGN } from "@/lib/tags";
+import { DESIGN } from "@/lib/tags";
 import ProjectLayout from "@/components/ProjectLayout";
 import Skeleton from "@/components/Skeleton";
 
@@ -22,7 +22,7 @@ const cards = [
   { name: 'Board 2', image: require('@/public/blossom/board2.jpg'), orientation: 'landscape' },
 ]
 
-const tags = [BLOSSOM, DESIGN];
+const tags = [DESIGN];
 
 function ProjectInfo({ children }) {
   return (

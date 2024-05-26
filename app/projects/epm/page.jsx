@@ -1,6 +1,6 @@
 "use client"
 import { H1, P } from "@/components/Typography";
-import { EPM, UI, WEB } from "@/lib/tags";
+import { UI, WEB } from "@/lib/tags";
 import ProjectLayout from "@/components/ProjectLayout";
 import Skeleton from "@/components/Skeleton";
 
@@ -13,7 +13,7 @@ const cards = [
   { name: 'Process', image: require('@/public/epm/process.png'), orientation: 'landscape', tags: [WEB] },
 ]
 
-const tags = [EPM, UI, WEB];
+const tags = [UI, WEB];
 
 function ProjectInfo({ children }) {
   return (

@@ -1,6 +1,6 @@
 "use client"
 import { H1, P } from "@/components/Typography";
-import { SNEAKTIME, GAME } from "@/lib/tags";
+import { GAME } from "@/lib/tags";
 import ProjectLayout from "@/components/ProjectLayout";
 import Skeleton from "@/components/Skeleton";
 
@@ -12,7 +12,7 @@ const cards = [
   { name: 'Yellow Level', image: require('@/public/sneaktime/yellow.png'), orientation: 'landscape' },
 ]
 
-const tags = [SNEAKTIME, GAME];
+const tags = [GAME];
 
 function ProjectInfo({ children }) {
   return (

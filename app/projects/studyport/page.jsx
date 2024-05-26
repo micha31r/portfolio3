@@ -1,6 +1,6 @@
 "use client"
 import { H1, P } from "@/components/Typography";
-import { STUDYPORT, WEB, UI } from "@/lib/tags";
+import { WEB, UI } from "@/lib/tags";
 import ProjectLayout from "@/components/ProjectLayout";
 import Skeleton from "@/components/Skeleton";
 
@@ -14,7 +14,7 @@ const cards = [
   { name: 'Edit Results', image: require('@/public/studyport/results.png'), orientation: 'landscape', tags: [WEB] },
 ]
 
-const tags = [STUDYPORT, WEB, UI];
+const tags = [WEB, UI];
 
 function ProjectInfo({ children }) {
   return (

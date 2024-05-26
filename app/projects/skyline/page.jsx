@@ -1,6 +1,6 @@
 "use client"
 import { H1, P } from "@/components/Typography";
-import { SKYLINE, UI, WEB } from "@/lib/tags";
+import { UI, WEB } from "@/lib/tags";
 import ProjectLayout from "@/components/ProjectLayout";
 import Skeleton from "@/components/Skeleton";
 
@@ -15,7 +15,7 @@ const cards = [
   { name: 'Checkout Step 3', image: require('@/public/skyline/shop5.png'), orientation: 'landscape', tags: [WEB] },
 ]
 
-const tags = [SKYLINE, UI, WEB];
+const tags = [UI, WEB];
 
 function ProjectInfo({ children }) {
   return (

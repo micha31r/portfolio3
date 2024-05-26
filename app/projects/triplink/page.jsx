@@ -1,6 +1,6 @@
 "use client"
 import { H1, P } from "@/components/Typography";
-import { TRIPLINK, DESIGN } from "@/lib/tags";
+import { DESIGN } from "@/lib/tags";
 import ProjectLayout from "@/components/ProjectLayout";
 import Skeleton from "@/components/Skeleton";
 
@@ -26,7 +26,7 @@ const cards = [
   { name: 'Board 3', image: require('@/public/triplink/board3.jpg'), orientation: 'landscape', date: '2022' },
 ]
 
-const tags = [TRIPLINK, DESIGN];
+const tags = [DESIGN];
 
 function ProjectInfo({ children }) {
   return (

@@ -1,6 +1,6 @@
 "use client"
 import { H1, P } from "@/components/Typography";
-import { ARKQUEST, UI, WEB } from "@/lib/tags";
+import { UI, WEB } from "@/lib/tags";
 import ProjectLayout from "@/components/ProjectLayout";
 import Skeleton from "@/components/Skeleton";
 
@@ -16,7 +16,7 @@ const cards = [
   { name: 'Donation', image: require('@/public/arkquest/donation.png'), orientation: 'landscape', tags: [WEB] },
 ]
 
-const tags = [ARKQUEST, WEB, UI];
+const tags = [WEB, UI];
 
 function ProjectInfo({ children }) {
   return (

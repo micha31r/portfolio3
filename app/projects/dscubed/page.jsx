@@ -1,6 +1,6 @@
 "use client"
 import { H1, P } from "@/components/Typography";
-import { DS3, UI, WEB } from "@/lib/tags";
+import { UI, WEB } from "@/lib/tags";
 import ProjectLayout from "@/components/ProjectLayout";
 import Skeleton from "@/components/Skeleton";
 
@@ -12,7 +12,7 @@ const cards = [
   { name: 'Mission', image: require('@/public/dscubed/mission.png'), orientation: 'landscape', tags: [WEB] },
 ]
 
-const tags = [DS3, WEB, UI];
+const tags = [WEB, UI];
 
 function ProjectInfo({ children }) {
   return (

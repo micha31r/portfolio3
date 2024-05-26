@@ -1,6 +1,6 @@
 "use client"
 import { H1, P } from "@/components/Typography";
-import { THEIMPOSSIBLE, WEB } from "@/lib/tags";
+import { WEB, UI } from "@/lib/tags";
 import ProjectLayout from "@/components/ProjectLayout";
 import Skeleton from "@/components/Skeleton";
 
@@ -17,7 +17,7 @@ const cards = [
   { name: 'Settings', image: require('@/public/theimpossible/settings.png'), orientation: 'landscape', tags: [WEB] },
 ]
 
-const tags = [THEIMPOSSIBLE, WEB];
+const tags = [WEB, UI];
 
 function ProjectInfo({ children }) {
   return (
