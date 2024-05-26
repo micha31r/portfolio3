@@ -18,12 +18,12 @@ export default function ThemeToggle({ className }) {
     <div className={clsx("", className)} key={themeKey}>
       {theme === 'light' 
         ? (
-            <button key={theme} className="flex w-12 h-12 bg-secondary rounded-full" onClick={() => setTheme("dark")}>
+            <button key={theme} className="flex w-12 h-12 bg-secondary/80 backdrop-blur-md rounded-full" onClick={() => setTheme("dark")}>
               <SunIcon className="h-6 w-6 m-auto"/>
             </button>
           )
         : (
-            <button className="flex w-12 h-12 bg-secondary rounded-full" onClick={() => setTheme("light")}>
+            <button className="flex w-12 h-12 bg-secondary/80 backdrop-blur-md rounded-full" onClick={() => setTheme("light")}>
               <MoonIcon className="h-6 w-6 m-auto"/>
             </button>
           )
