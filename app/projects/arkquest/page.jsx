@@ -36,7 +36,7 @@ function ProjectDescription({ children }) {
 
 export default function Page() {
   return (
-    <ProjectLayout cards={cards} tags={tags} link={"https://dscubed.org.au"}>
+    <ProjectLayout cards={cards} tags={tags} link={"https://arkquest.org.nz/"}>
       <ProjectInfo>
         <H1>Ark Quest Website</H1>
         <P className="text-base" muted>2021 - 2022</P>
