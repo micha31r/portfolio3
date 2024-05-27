@@ -48,6 +48,11 @@
     --ring: 0 0% 83.1%;
   }
 
+  * {
+    /* Fix column rendering issue in Safari */
+    -webkit-column-break-inside: avoid;
+  }
+
   /* Hide scroll bar */
   .hide-scroll-bar::-webkit-scrollbar {
     display: none;

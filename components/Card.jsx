@@ -14,14 +14,14 @@ export default function Card ({ data: { name, image, date, tags, orientation, hr
   const router = useRouter()
   
   return (
-    <div className={clsx("relative w-full text-sm text-muted-foreground bg-secondary rounded-sm overflow-hidden [&:hover_.links]:opacity-100 [&:hover_.links]:pointer-events-auto", className)}>
+    <div className={clsx("relative w-full text-sm text-muted-foreground bg-secondary rounded-sm [&:hover_.links]:opacity-100 [&:hover_.links]:pointer-events-auto", className)}>
       <div className="flex justify-between px-3 pt-2">
         <div className="">{name}</div>
         <div className="">{date}</div>
       </div>
       <div className={clsx("flex p-2 transition", {
         // 'cursor-pointer': href,
-        'hover:scale-95 cursor-pointer': href,
+        'hover:scale-95 will-change-transform cursor-pointer': href,
       })} onClick={e => href && router.push(href)}>
         <Suspense>
           {tags && tags.includes(WEB) ? (
@@ -40,7 +40,7 @@ export default function Card ({ data: { name, image, date, tags, orientation, hr
           )}
         </Suspense>
       </div>
-      {children}
+      <div className="will-change-auto">{children}</div>
     </div>
   )
 }
