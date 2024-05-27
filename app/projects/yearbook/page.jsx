@@ -6,7 +6,7 @@ import Skeleton from "@/components/Skeleton";
 
 const cards = [
   { name: 'Cover', image: require('@/public/yearbook/cover.jpg'), orientation: 'portrait' },
-  { name: 'Mockup', image: require('@/public/yearbook/mockup.jpg'), orientation: 'landscape' },
+  { name: 'Print', image: require('@/public/yearbook/mockup.jpg'), orientation: 'landscape' },
 ]
 
 const tags = [DESIGN];
