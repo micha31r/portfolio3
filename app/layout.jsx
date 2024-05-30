@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={clsx(
-        "min-h-svh bg-background font-sans antialiased",
+        "min-h-svh bg-background antialiased",
         inter.className
       )}>
         <ThemeProvider
