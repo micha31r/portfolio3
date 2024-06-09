@@ -2,7 +2,7 @@
 import { H1, P } from "@/components/Typography";
 import { UI, WEB } from "@/lib/tags";
 import ProjectLayout from "@/components/ProjectLayout";
-import Skeleton from "@/components/Skeleton";
+import SLink from "@/components/SLink";
 
 const cards = [
   { name: 'Interactive Matrix', image: require('@/public/dscubed/matrix.png'), orientation: 'landscape', tags: [WEB] },
@@ -38,7 +38,7 @@ export default function Page() {
         <P className="text-base" muted>2023 - 2024</P>
       </ProjectInfo>
       <ProjectDescription>
-        <Skeleton />
+        <P>I built this website using React, Next.js, and Tailwind CSS as part of my role as IT Director at <SLink href="https://www.dscubed.org.au/">DSCubed</SLink>. At the centre is an interactive matrix designed to engage visitors. The grid of circles represents a mathematical matrix, which provides a unique and compelling representation of data science.</P>
       </ProjectDescription>
     </ProjectLayout>
   );

@@ -6,11 +6,7 @@ import Link from "next/link";
 import CardGallery from "@/components/CardGallery";
 import { CARD_DATA } from "@/lib/data";
 import { Suspense } from "react";
-
-// Styled link component
-function SLink ({ href, children }) {
-  return <Link className="border-b border-border hover:text-muted-foreground transition" href={href}>{children}</Link>
-}
+import SLink from "@/components/SLink";
 
 export default function Page() {
   return (
