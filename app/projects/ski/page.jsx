@@ -31,7 +31,7 @@ export default function Page() {
 
       <div className="grid grid-cols-1 gap-2 px-2">
         {cards.map((item, index) => (
-          <Card className="" key={index} data={item} scale={2}/>
+          <Card key={index} data={item} scale={2}/>
           ))}
       </div>
     </Layout>
