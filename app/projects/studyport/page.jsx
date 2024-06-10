@@ -6,6 +6,7 @@ import Card from "@/components/Card";
 import SLink from "@/components/SLink";
 
 const cards = [
+  { name: 'Overview', image: require('@/public/studyport/overview.png'), orientation: 'landscape', tags: [WEB] },
   { name: 'Progress Summary', image: require('@/public/studyport/progress.png'), orientation: 'landscape', tags: [WEB] },
   { name: 'NCEA Progress', image: require('@/public/studyport/ncea.png'), orientation: 'landscape', tags: [WEB] },
   { name: 'All Goals', image: require('@/public/studyport/goals.png'), orientation: 'landscape', tags: [WEB] },
