@@ -22,7 +22,7 @@ export default function Page() {
         </Layout.Info>
 
         <Layout.Description>
-          <P>I collaborated with my friends to design the 2021 yearbook for Tauranga Boys' College. During COVID lockdowns, everyone lived in their own "bubble", which inspired me to use circle imagery to symbolise the community and interconnectedness despite physical distancing measures.</P>
+          <P>I collaborated with my friends to design the 2021 yearbook for Tauranga Boys&apos; College. During COVID lockdowns, everyone lived in their own &quot;bubble&quot;, which inspired me to use circle imagery to symbolise the community and interconnectedness despite physical distancing measures.</P>
         </Layout.Description>
         
         <Layout.Meta>

@@ -29,7 +29,7 @@ export default function Page() {
         </Layout.Info>
 
         <Layout.Description>
-          <P>I volunteered as a web developer for Ark Quest Trust, where I designed and developed a new website. Ark Quest Trust supports a private Christian school in rural Kenya, helping make education accessible. The website's key features include a blog system and an online donation portal.</P>
+          <P>I volunteered as a web developer for Ark Quest Trust, where I designed and developed a new website. Ark Quest Trust supports a private Christian school in rural Kenya, helping make education accessible. The website&apos;s key features include a blog system and an online donation portal.</P>
         </Layout.Description>
         
         <Layout.Meta>

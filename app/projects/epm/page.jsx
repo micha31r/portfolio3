@@ -26,7 +26,7 @@ export default function Page() {
         </Layout.Info>
 
         <Layout.Description>
-          <P>I designed and developed a new website for Evans Property Management (previously Professional Property Management) using Django. The website includes information about the company's services, locations, and other owner/tenant information.</P>
+          <P>I designed and developed a new website for Evans Property Management (previously Professional Property Management) using Django. The website includes information about the company&apos;s services, locations, and other owner/tenant information.</P>
         </Layout.Description>
         
         <Layout.Meta>
