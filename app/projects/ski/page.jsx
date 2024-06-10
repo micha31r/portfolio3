@@ -1,8 +1,8 @@
 "use client"
 import { H1, P } from "@/components/Typography";
 import { DESIGN } from "@/lib/tags";
-import ProjectLayout from "@/components/ProjectLayout";
-import Skeleton from "@/components/Skeleton";
+import Layout from "@/components/ProjectLayout";
+import Card from "@/components/Card";
 
 const cards = [
   { name: 'Mockup', image: require('@/public/ski/mockup.png'), orientation: 'portrait' },
@@ -10,32 +10,30 @@ const cards = [
 
 const tags = [DESIGN];
 
-function ProjectInfo({ children }) {
-  return (
-    <div className="space-y-1">
-      {children}
-    </div>
-  )
-}
-
-function ProjectDescription({ children }) {
-  return (
-    <div className="space-y-[1.25em]">
-      {children}
-    </div>
-  )
-}
-
 export default function Page() {
   return (
-    <ProjectLayout cards={cards} tags={tags}>
-      <ProjectInfo>
-        <H1>Ski Design</H1>
-        <P className="text-base" muted>2020</P>
-      </ProjectInfo>
-      <ProjectDescription>
-        <Skeleton />
-      </ProjectDescription>
-    </ProjectLayout>
+    <Layout>
+      <Layout.Section>
+        <Layout.Info>
+          <H1>Ski Design</H1>
+          <P className="text-base" muted>Adobe Photoshop</P>
+          <P className="text-base" muted>2020</P>
+        </Layout.Info>
+
+        <Layout.Description>
+          <P>Ski design for a client.</P>
+        </Layout.Description>
+        
+        <Layout.Meta>
+          <Layout.Tags tags={tags}/>
+        </Layout.Meta>
+      </Layout.Section>
+
+      <div className="grid grid-cols-1 gap-2 px-2">
+        {cards.map((item, index) => (
+          <Card key={index} data={item} scale={2}/>
+          ))}
+      </div>
+    </Layout>
   );
 }

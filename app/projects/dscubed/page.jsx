@@ -1,8 +1,8 @@
 "use client"
 import { H1, P } from "@/components/Typography";
 import { UI, WEB } from "@/lib/tags";
-import ProjectLayout from "@/components/ProjectLayout";
-import Skeleton from "@/components/Skeleton";
+import Layout from "@/components/ProjectLayout";
+import Card from "@/components/Card";
 
 const cards = [
   { name: 'Interactive Matrix', image: require('@/public/dscubed/matrix.png'), orientation: 'landscape', tags: [WEB] },
@@ -14,32 +14,31 @@ const cards = [
 
 const tags = [WEB, UI];
 
-function ProjectInfo({ children }) {
-  return (
-    <div className="space-y-1">
-      {children}
-    </div>
-  )
-}
-
-function ProjectDescription({ children }) {
-  return (
-    <div className="space-y-[1.25em]">
-      {children}
-    </div>
-  )
-}
-
 export default function Page() {
   return (
-    <ProjectLayout cards={cards} tags={tags} link={"https://dscubed.org.au"}>
-      <ProjectInfo>
-        <H1>DSCubed Website</H1>
-        <P className="text-base" muted>2023 - 2024</P>
-      </ProjectInfo>
-      <ProjectDescription>
-        <Skeleton />
-      </ProjectDescription>
-    </ProjectLayout>
+    <Layout>
+      <Layout.Section>
+        <Layout.Info>
+          <H1>DSCubed Website</H1>
+          <P className="text-base" muted>React • Next • Tailwind • Supabase</P>
+          <P className="text-base" muted>2024</P>
+        </Layout.Info>
+
+        <Layout.Description>
+          <P>I built this website using React, Next.js, and Tailwind CSS as part of my role as IT Director at DSCubed. At the centre is an interactive matrix designed to engage visitors. The grid of circles represents a mathematical matrix, which provides a unique and compelling representation of data science.</P>
+        </Layout.Description>
+        
+        <Layout.Meta>
+          <Layout.Tags tags={tags}/>
+          <Layout.PreviewLink link="https://dscubed.org.au"/>
+        </Layout.Meta>
+      </Layout.Section>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 px-2">
+        {cards.map((item, index) => (
+          <Card key={index} data={item} scale={1.5}/>
+          ))}
+      </div>
+    </Layout>
   );
 }
