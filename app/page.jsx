@@ -19,7 +19,7 @@ export default function Page() {
         {/* <P>I&apos;m involved in several tech clubs: IT Director at <SLink href="https://www.dscubed.org.au/">DS Cubed</SLink>, IT Officer at <SLink href="https://cissa.org.au/">CISSA</SLink>, and Events Officer at GDSC</P> */}
         <P>I&apos;m passionate about programming and user interface design. In my free time, I enjoy working on exciting projects, thinking about the future, and playing badminton on Saturdays.</P>
         {/* <P>I have lived in several countries: China (born there), New Zealand (8 yrs) and Australia (1+ yrs).</P> */}
-        <P>Find me on <SLink href="https://github.com/micha31r">Github</SLink> and <SLink href="https://www.linkedin.com/in/m-ren/">LinkedIn</SLink>.<br/> Reach me via <SLink href="mailto:mike@mre.is">Email</SLink>.</P>
+        <P>Find me on <SLink href="https://github.com/micha31r">Github</SLink> and <SLink href="https://www.linkedin.com/in/m-ren/">LinkedIn</SLink>.<br/> Reach me via <SLink href="mailto:hey@michaelren.dev">Email</SLink>.</P>
       </Section>
 
       <Suspense>
