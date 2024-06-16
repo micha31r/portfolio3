@@ -28,7 +28,7 @@ const cards = [
   { name: 'Double Page Spread', image: require('@/public/triplink/dps4.png'), orientation: 'landscape', date: '2022' },
   { name: 'Double Page Spread Mockup', image: require('@/public/triplink/dps-mockup.png'), orientation: 'landscape', date: '2022' },
   { name: 'Website Mockup', image: require('@/public/triplink/website-mockup.png'), orientation: 'landscape', date: '2022' },
-  { name: 'Website Mockup', image: require('@/public/triplink/website-mockup-mobile.png'), orientation: 'landscape', date: '2022' },
+  { name: 'App Mockup', image: require('@/public/triplink/app-mockup.png'), orientation: 'landscape', date: '2022' },
   { name: 'App', image: require('@/public/triplink/app.png'), orientation: 'landscape', date: '2022' },
   ]
   
